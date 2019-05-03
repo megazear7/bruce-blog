@@ -3,9 +3,9 @@
 }
 
 html {
-  --primary-color: #43ab5f;
-  --secondary-color: #00a07c;
-  --tertiary-color: #94d75b;
+  --primary-color: #ff9d00;
+  --secondary-color: #006468;
+  --tertiary-color: #ff9d00;
   --code-header-color: #a8a8a8;
   --code-background-color: #f8f8f8;
   --grey: #eee;
@@ -29,15 +29,15 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--tertiary-color);
   text-shadow: var(--text-shadow);
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1;
   font-weight: 300;
   color: var(--primary-color);
@@ -116,21 +116,25 @@ pre {
 
 header {
   padding: 1rem;
-  border-top: 3px solid var(--primary-color);
-  background-color: var(--secondary-color);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 footer {
-  padding: 1rem;
+  padding: 3rem 1rem;
   background: var(--secondary-color);
+  font-size: .75rem;
 }
 
 footer, footer a {
   color: var(--tertiary-color);
-}
-
-nav {
-  background: var(--secondary-color);
 }
 
 nav > div {
@@ -141,10 +145,10 @@ nav > div {
 nav a {
   flex-grow: 1;
   flex-basis: 0;
-  padding: 1rem;
   text-align: center;
   text-decoration: none;
   color: var(--tertiary-color);
+  text-shadow: var(--text-shadow);
 }
 
 nav a:hover {
@@ -157,6 +161,7 @@ nav a.active {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 .small-blog-overview img {
@@ -177,4 +182,57 @@ ul.breadcrumb li {
 ul.breadcrumb li+li:before {
   padding: 8px;
   content: "/\00a0";
+}
+
+.header-container {
+  border-top: 3px solid var(--primary-color);
+  position: relative;
+}
+
+.desktop {
+  display: none;
+}
+
+@media only screen and (min-width : 800px) {
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    nav a {
+      font-size: 1.25rem;
+      letter-spacing: 2px;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+    }
+
+    h6 {
+      font-size: 1.25rem;
+    }
 }

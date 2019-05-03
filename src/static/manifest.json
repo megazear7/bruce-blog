@@ -1,11 +1,11 @@
 {
-  "name": "OrisonJS",
-  "short_name": "OrisonJS",
-  "description": "Orison server and static stite generator documentation",
+  "name": "Bruce's Blog",
+  "short_name": "Bruce's Blog",
+  "description": "A blog by Bruce Baker.",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#fa5d0f",
-  "background_color": "#ffce27",
+  "theme_color": "#ff9d00",
+  "background_color": "#006468",
   "icons": [
     {
       "src": "icons/icon-512x512.png",

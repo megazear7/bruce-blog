@@ -2,7 +2,6 @@ import { html } from 'orison';
 
 export default () => html`
   <footer>
-    <p>Built with the OrisonJS Starter Kit</p>
     <div>
       Icons made by
       <a href="https://www.freepik.com/?__hstc=57440181.2282195b3a6ebcdebb69761cf64ce916.1556880797983.1556880797983.1556880797983.1&__hssc=57440181.4.1556880797983&__hsfp=3062615811" title="Freepik">Freepik</a>
