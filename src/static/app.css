@@ -13,7 +13,7 @@ html {
   --app-section-even-color: #fff;
   --app-section-odd-color: var(--grey);
   --border-radius: 5px;
-  --content-width: 600px;
+  --content-width: 800px;
   --text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   font-size: 18px;
   line-height: 2rem;
@@ -39,7 +39,7 @@ h1 {
 h2 {
   font-size: 2.5rem;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--primary-color);
   text-shadow: var(--text-shadow);
 }
@@ -79,6 +79,10 @@ h6 {
   text-shadow: var(--text-shadow);
 }
 
+a {
+  color: var(--primary-color);
+}
+
 p {
   font-size: 1rem;
 }
@@ -89,11 +93,8 @@ main p {
 
 section {
   padding: 1rem;
-  background: var(--app-section-even-color);
-}
-
-section:nth-of-type(even) {
   background: var(--app-section-odd-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 section > *, footer > *, header > *, nav > * {
@@ -156,6 +157,12 @@ nav a.active {
 
 img {
   max-width: 100%;
+}
+
+.small-blog-overview img {
+  max-width: 50%;
+  padding: 1rem;
+  float: right;
 }
 
 ul.breadcrumb {

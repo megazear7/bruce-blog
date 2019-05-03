@@ -1,7 +1,10 @@
 import { html } from 'orison';
+import client from '../../contentful.js';
 
-export default context => html`
-  <section>
-    <h2>${context.data.title}</h2>
-  <section>
-`;
+export default async context => {
+  const entry = await client.getEntry(context.data.pageId);
+
+  return html`
+    <section>${context.mdString(entry.fields.body)}</section>
+  `;
+};
