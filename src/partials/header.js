@@ -1,7 +1,8 @@
 import { html } from 'orison';
 
-export default () => html`
+export default title => html`
   <header>
-    <h1>OrisonJS Starter Kit</h1>
+    <h1>${title}</h1>
+    <!-- <img alt="Orison smoking pipe icon" src="/icons/icon-256x256.png"> -->
   </header>
 `;

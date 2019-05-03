@@ -3,9 +3,9 @@
 }
 
 html {
-  --primary-color: #fa5d0f;
-  --secondary-color: #ffce27;
-  --tertiary-color: #d13405;
+  --primary-color: #43ab5f;
+  --secondary-color: #00a07c;
+  --tertiary-color: #94d75b;
   --code-header-color: #a8a8a8;
   --code-background-color: #f8f8f8;
   --grey: #eee;
@@ -49,30 +49,29 @@ h3 {
   line-height: 1;
   font-weight: 300;
   letter-spacing: 2px;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   text-shadow: var(--text-shadow);
 }
 
 h4 {
-  /* Careful. This is meant to be used as code block headers */
-  color: var(--code-header-color);
-  margin-bottom: 0;
-  background-color: var(--code-background-color);
-  padding: 0.5em;
-  border-bottom: 1px solid var(--code-header-color);
-  font-weight: 300;
-}
-
-h5 {
   font-size: 1.5rem;
   line-height: 1;
   font-weight: 300;
-  color: var(--tertiary-color);
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  text-shadow: var(--text-shadow);
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 300;
+  color: var(--primary-color);
   text-shadow: var(--text-shadow);
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1;
   font-weight: 300;
   letter-spacing: 2px;
@@ -125,6 +124,10 @@ footer {
   background: var(--secondary-color);
 }
 
+footer, footer a {
+  color: var(--tertiary-color);
+}
+
 nav {
   background: var(--secondary-color);
 }
@@ -144,13 +147,11 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--primary-color);
   border-bottom: 3px dashed var(--primary-color);
 }
 
 nav a.active {
-  color: var(--primary-color);
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--tertiary-color);
 }
 
 img {
