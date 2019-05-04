@@ -1,6 +1,6 @@
 # A Blog Built with OrisonJS
 
-[https://affectionate-pare-026fd2.netlify.com/](https://affectionate-pare-026fd2.netlify.com/)
+[https://bruce-blog.netlify.com/](https://bruce-blog.netlify.com/)
 
 ## Install
 
